@@ -1,8 +1,8 @@
 import flask
 import tensorflow as tf
-from flask_cors import CORS
 import os
 import numpy as np
+from flask_cors import CORS
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 app = flask.Flask(__name__)
