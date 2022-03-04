@@ -40,3 +40,6 @@ def hello(input):
             return num
 
     return flask.jsonify(prediction=str(predict_next_score(scores[-1])))
+
+if __name__ == "__main__":
+  app.run()
