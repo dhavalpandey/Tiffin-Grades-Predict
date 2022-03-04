@@ -1,10 +1,12 @@
 import flask
 import tensorflow as tf
+from flask_cors import CORS
 import os
 import numpy as np
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 app = flask.Flask(__name__)
+CORS(app, origins=["https://tiffingrades.netlify.app", "http://localhost:3000"])
 
 @app.route('/<input>', methods=['GET'])
 def hello(input):
